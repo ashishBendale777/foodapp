@@ -1,3 +1,4 @@
+
 CREATE TABLE `Customers` (
   `CustID` INT PRIMARY KEY AUTO_INCREMENT,
   `FullName` varchar(10) NOT NULL,
