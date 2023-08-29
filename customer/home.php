@@ -1,5 +1,10 @@
-<?php include 'index.php'?>
-<h1>Home</h1>
+<?php include 'index.php';
+session_start();
+?>
+
+<h1>Welcome</h1>
+<h1><?= $_SESSION["CustName"] ?></h1>
+<h1><?= $_SESSION["CustID"] ?></h1>
 
 
 <!-- Developed By:Ashish Bendale
