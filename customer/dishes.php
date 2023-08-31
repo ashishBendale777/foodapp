@@ -16,12 +16,11 @@ include '../config/dbconnect.php';
                         <h4 class="card-title"><?= $row['DishName'] ?> &#8377; <?= $row['DishPrice'] ?></h4>
                         <h5 class="card-text">Type: <?= $row['DishType'] ?> </h5>
                         <h5 class="card-text">Category: <?= $row['DishCategory'] ?> </h5>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="buy.php?dishId=<?= $row['DishID']; ?>" class="btn btn-primary">Buy Now</a>
                     </div>
                 </div>
             </div>
         <?php } ?>
-
 
     </div>
 </div>

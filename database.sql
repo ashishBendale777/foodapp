@@ -27,3 +27,10 @@ CREATE TABLE `Orders` (
   `DishPrice` FLOAT,
   `DishQty` INT 
 );
+
+-- add new COLUMN in orders table
+ALTER TABLE orders ADD COLUMN CustID INT NOT NULL;
+ALTER TABLE orders ADD COLUMN TotalAmount FLOAT NOT NULL;
+
+-- add FOREIGN KEY constrainct in orders table
+ALTER TABLE orders ADD FOREIGN KEY (CustId) REFERENCES customers(CustID);
